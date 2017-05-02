@@ -1,86 +1,101 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "One",
       answers: [
           {
-              type: "Microsoft",
-              content: "Halo"
+              type: "one",
+              content: "Strongly Disagree"
           },
           {
-              type: "Nintendo",
-              content: "Pokemon"
+              type: "one",
+              content: "Disagree"
           },
           {
-              type: "Sony",
-              content: "Uncharted"
+              type: "one",
+              content: "Neutral"
+          },
+          {
+              type: "one",
+              content: "Agree"
+          },
+          {
+              type: "one",
+              content: "Strongly Agree"
           }
       ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
+      question: "Two",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box"
+              type: "two",
+              content: "Strongly Disagree"
           },
           {
-              type: "Nintendo",
-              content: "Nintendo 64"
+              type: "two",
+              content: "Disagree"
           },
           {
-              type: "Sony",
-              content: "Playstation 1"
+              type: "two",
+              content: "Neutral"
+          },
+          {
+              type: "two",
+              content: "Agree"
+          },
+          {
+              type: "two",
+              content: "Strongly Agree"
           }
       ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
+      question: "Three",
       answers: [
           {
-              type: "Microsoft",
-              content: "Forza"
+              type: "three",
+              content: "Strongly Disagree"
           },
           {
-              type: "Nintendo",
-              content: "Mario Kart"
+              type: "three",
+              content: "Disagree"
           },
           {
-              type: "Sony",
-              content: "Gran Turismo"
+              type: "three",
+              content: "Neutral"
+          },
+          {
+              type: "three",
+              content: "Agree"
+          },
+          {
+              type: "three",
+              content: "Strongly Agree"
           }
       ]
   },
   {
-      question: "Which of these games do you think is best?",
+      question: "Four",
       answers: [
           {
-              type: "Microsoft",
-              content: "BioShock"
+              type: "four",
+              content: "Strongly Disagree"
           },
           {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
+              type: "four",
+              content: "Disagree"
           },
           {
-              type: "Sony",
-              content: "Final Fantasy VII"
-          }
-      ]
-  },
-  {
-      question: "What console would you prefer to own?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "X-Box One"
+              type: "four",
+              content: "Neutral"
           },
           {
-              type: "Nintendo",
-              content: "Wii U"
+              type: "four",
+              content: "Agree"
           },
           {
-              type: "Sony",
-              content: "Playstation 4"
+              type: "four",
+              content: "Strongly Agree"
           }
       ]
   }
