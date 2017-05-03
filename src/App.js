@@ -44,7 +44,6 @@ class App extends Component {
   };
 
   handleAnswerSelected(event) {
-    debugger;
     this.setUserAnswer(event.currentTarget.value);
 
     if (this.state.questionId < quizQuestions.length) {
@@ -55,8 +54,11 @@ class App extends Component {
   }
 
   setUserAnswer(answer) {
+    const answerParts = answer.split('|');
+    const type = answerParts[0];
+    const value = Number(answerParts[1]);
     const updatedAnswersCount = update(this.state.answersCount, {
-      [answer]: {$apply: (currentValue) => currentValue + 1}
+      [type]: {$apply: (currentValue) => currentValue + value}
     });
 
     this.setState({
