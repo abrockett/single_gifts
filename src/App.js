@@ -18,9 +18,11 @@ class App extends Component {
       answerOptions: [],
       answer: '',
       answersCount: {
-        Nintendo: 0,
-        Microsoft: 0,
-        Sony: 0
+        Administration: 0,
+        Apostleship: 0,
+        ArtisticExpression: 0,
+        Craftsmanship: 0,
+        Discernment: 0
       },
       result: ''
     };
@@ -29,7 +31,6 @@ class App extends Component {
   }
 
   componentWillMount() {
-    debugger;
     const shuffledAnswerOptions = quizQuestions.map((question) => this.shuffleArray(question.answers));
     this.setState({
       question: quizQuestions[0].question,
@@ -43,6 +44,7 @@ class App extends Component {
   };
 
   handleAnswerSelected(event) {
+    debugger;
     this.setUserAnswer(event.currentTarget.value);
 
     if (this.state.questionId < quizQuestions.length) {
@@ -81,6 +83,11 @@ class App extends Component {
     const answersCountKeys = Object.keys(answersCount);
     const answersCountValues = answersCountKeys.map((key) => answersCount[key]);
     const maxAnswerCount = Math.max.apply(null, answersCountValues);
+
+    console.log(answersCount);
+    console.log(answersCountKeys);
+    console.log(answersCountValues);
+    console.log(maxAnswerCount);
 
     return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
   }

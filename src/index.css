@@ -154,15 +154,15 @@ body {
   content: '';
   position:relative;
   top:11px;
-  left:9.5%;
+  left:9%;
   display:block;
   background-color:#efefef;
   height:4px;
-  width:78%;
+  width:72%;
 }
 .likert li {
   display:inline-block;
-  width:19%;
+  width:15%;
   text-align:center;
   vertical-align: top;
 }
@@ -175,8 +175,3 @@ body {
 
 }
 .likert li label {width:100%;}
-.buttons {
-  margin:30px 0;
-  padding:0 4.25%;
-  text-align:right
-}
