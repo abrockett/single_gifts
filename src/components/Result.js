@@ -3,6 +3,10 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 function Result(props) {
 
+  const listItems = props.quizResult.map((gift) =>
+    <li>{gift}</li>
+  );
+
   return (
     <ReactCSSTransitionGroup
       className="container result"
@@ -13,8 +17,9 @@ function Result(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <div>
-        You prefer <strong>{props.quizResult}</strong>!
+      <div className="results">
+        Your gifts in order are:
+        <ol>{listItems}</ol>
       </div>
     </ReactCSSTransitionGroup>
   );

@@ -19,12 +19,10 @@ class App extends Component {
       answer: '',
       answersCount: {
         Administration: 0,
-        Apostleship: 0,
         ArtisticExpression: 0,
-        Craftsmanship: 0,
         Discernment: 0
       },
-      result: ''
+      results: []
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
@@ -91,15 +89,15 @@ class App extends Component {
     console.log(answersCountValues);
     console.log(maxAnswerCount);
 
-    return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
+    answersCountKeys.sort(function(a, b) { return answersCount[b] - answersCount[a] });
+    console.log(answersCountKeys);
+
+    return answersCountKeys
+    //return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
   }
 
-  setResults(result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
+  setResults(results) {
+    this.setState({ results: results });
   }
 
   renderQuiz() {
@@ -117,7 +115,7 @@ class App extends Component {
 
   renderResult() {
     return (
-      <Result quizResult={this.state.result} />
+      <Result quizResult={this.state.results} />
     );
   }
 
@@ -128,7 +126,7 @@ class App extends Component {
           <img src={fpclogo} alt="logo" />
           <h2>FPC Spiritual Gifts Inventory</h2>
         </div>
-        {this.state.result ? this.renderResult() : this.renderQuiz()}
+        {this.state.results.length > 0 ? this.renderResult() : this.renderQuiz()}
       </div>
     );
   }

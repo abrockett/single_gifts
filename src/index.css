@@ -188,3 +188,7 @@ body {
 .custom:checked {
     background:limegreen;
 }
+.results {
+  font-family: sans-serif;
+  font-size: 20px;
+}

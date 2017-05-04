@@ -29,35 +29,6 @@ var quizQuestions = [
     ]
   },
   {
-    question: "I have been successful in starting new ministries.",
-    answers: [
-      {
-        type: "Apostleship|0",
-        content: "0 (Never true)"
-      },
-      {
-        type: "Apostleship|1",
-        content: "1"
-      },
-      {
-        type: "Apostleship|2",
-        content: "2"
-      },
-      {
-        type: "Apostleship|3",
-        content: "3"
-      },
-      {
-        type: "Apostleship|4",
-        content: "4"
-      },
-      {
-        type: "Apostleship|5",
-        content: "5 (Always true)"
-      }
-    ]
-  },
-  {
     question: "God uses my artistic/musical gifts to help people worship him.",
     answers: [
       {
@@ -82,35 +53,6 @@ var quizQuestions = [
       },
       {
         type: "ArtisticExpression|5",
-        content: "5 (Always true)"
-      }
-    ]
-  },
-  {
-    question: "I enjoy working with my hands to create things that facilitate my own or others’ ministry.",
-    answers: [
-      {
-        type: "Craftsmanship|0",
-        content: "0 (Never true)"
-      },
-      {
-        type: "Craftsmanship|1",
-        content: "1"
-      },
-      {
-        type: "Craftsmanship|2",
-        content: "2"
-      },
-      {
-        type: "Craftsmanship|3",
-        content: "3"
-      },
-      {
-        type: "Craftsmanship|4",
-        content: "4"
-      },
-      {
-        type: "Craftsmanship|5",
         content: "5 (Always true)"
       }
     ]
@@ -174,35 +116,6 @@ var quizQuestions = [
     ]
   },
   {
-    question: "When I see a need in the church or community, I envision how to create a ministry to meet the need.",
-    answers: [
-      {
-        type: "Apostleship|0",
-        content: "0 (Never true)"
-      },
-      {
-        type: "Apostleship|1",
-        content: "1"
-      },
-      {
-        type: "Apostleship|2",
-        content: "2"
-      },
-      {
-        type: "Apostleship|3",
-        content: "3"
-      },
-      {
-        type: "Apostleship|4",
-        content: "4"
-      },
-      {
-        type: "Apostleship|5",
-        content: "5 (Always true)"
-      }
-    ]
-  },
-  {
     question: "I can communicate important things about God to others through writing, art, or music.",
     answers: [
       {
@@ -227,35 +140,6 @@ var quizQuestions = [
       },
       {
         type: "ArtisticExpression|5",
-        content: "5 (Always true)"
-      }
-    ]
-  },
-  {
-    question: "I am skilled at creating useful items from tangible items like glass, metal, wood, paper, etc.",
-    answers: [
-      {
-        type: "Craftsmanship|0",
-        content: "0 (Never true)"
-      },
-      {
-        type: "Craftsmanship|1",
-        content: "1"
-      },
-      {
-        type: "Craftsmanship|2",
-        content: "2"
-      },
-      {
-        type: "Craftsmanship|3",
-        content: "3"
-      },
-      {
-        type: "Craftsmanship|4",
-        content: "4"
-      },
-      {
-        type: "Craftsmanship|5",
         content: "5 (Always true)"
       }
     ]
@@ -319,35 +203,6 @@ var quizQuestions = [
     ]
   },
   {
-    question: "I have been told I exhibit an entrepreneurial capacity.",
-    answers: [
-      {
-        type: "Apostleship|0",
-        content: "0 (Never true)"
-      },
-      {
-        type: "Apostleship|1",
-        content: "1"
-      },
-      {
-        type: "Apostleship|2",
-        content: "2"
-      },
-      {
-        type: "Apostleship|3",
-        content: "3"
-      },
-      {
-        type: "Apostleship|4",
-        content: "4"
-      },
-      {
-        type: "Apostleship|5",
-        content: "5 (Always true)"
-      }
-    ]
-  },
-  {
     question: "I express something of God’s creativity through dance, written communication, painting, drawing, or drama.",
     answers: [
       {
@@ -372,35 +227,6 @@ var quizQuestions = [
       },
       {
         type: "ArtisticExpression|5",
-        content: "5 (Always true)"
-      }
-    ]
-  },
-  {
-    question: "Others depend on me to make or fix things to help the church function.",
-    answers: [
-      {
-        type: "Craftsmanship|0",
-        content: "0 (Never true)"
-      },
-      {
-        type: "Craftsmanship|1",
-        content: "1"
-      },
-      {
-        type: "Craftsmanship|2",
-        content: "2"
-      },
-      {
-        type: "Craftsmanship|3",
-        content: "3"
-      },
-      {
-        type: "Craftsmanship|4",
-        content: "4"
-      },
-      {
-        type: "Craftsmanship|5",
         content: "5 (Always true)"
       }
     ]
