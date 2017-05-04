@@ -153,8 +153,8 @@ body {
 .likert:before {
   content: '';
   position:relative;
-  top:11px;
-  left:9%;
+  top:19px;
+  left:10%;
   display:block;
   background-color:#efefef;
   height:4px;
@@ -172,6 +172,19 @@ body {
   top:0;
   left:50%;
   margin-left:-6px;
-
 }
-.likert li label {width:100%;}
+.likert li label {width:100%; margin-left: 13px}
+
+.custom {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    width:30px;
+    height:30px;
+    border:5px solid rgba(0,0,0,.4);
+    border-radius:50%;
+    box-shadow:inset 0 0 30px rgba(0,0,0,.2);
+}
+.custom:checked {
+    background:limegreen;
+}

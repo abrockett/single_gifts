@@ -3,7 +3,7 @@ import update from 'react-addons-update';
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
-import logo from './svg/logo.svg';
+import fpclogo from './svg/fpclogo.png';
 import './App.css';
 
 class App extends Component {
@@ -125,8 +125,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React Quiz</h2>
+          <img src={fpclogo} alt="logo" />
+          <h2>FPC Spiritual Gifts Inventory</h2>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
