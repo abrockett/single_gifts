@@ -541,12 +541,12 @@ var quizQuestions = [
   },
   { question: "Although my generosity is usually meant to be anonymous, people know me as charitable and philanthropic with the resources God has given me.",
     answers: [
-      { type: "Given|0", content: "0 (Never true)" },
-      { type: "Given|1", content: "1" },
-      { type: "Given|2", content: "2" },
-      { type: "Given|3", content: "3" },
-      { type: "Given|4", content: "4" },
-      { type: "Given|5", content: "5 (Always true)" }
+      { type: "Giving|0", content: "0 (Never true)" },
+      { type: "Giving|1", content: "1" },
+      { type: "Giving|2", content: "2" },
+      { type: "Giving|3", content: "3" },
+      { type: "Giving|4", content: "4" },
+      { type: "Giving|5", content: "5 (Always true)" }
     ]
   },
   { question: "I enjoy doing the behind-the-scenes things that support others’ ministries.",

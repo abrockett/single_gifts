@@ -19,8 +19,28 @@ class App extends Component {
       answer: '',
       answersCount: {
         Administration: 0,
-        ArtisticExpression: 0,
-        Discernment: 0
+        Apostleship: 0,
+        'Artistic Expression': 0,
+        Craftsmanship: 0,
+        Discernment: 0,
+        Evangelism: 0,
+        Exhortation: 0,
+        Faith: 0,
+        Giving: 0,
+        Helps: 0,
+        Hospitality: 0,
+        Intercession: 0,
+        Knowledge: 0,
+        Leadership: 0,
+        Mercy: 0,
+        Prophecy: 0,
+        Shepherding: 0,
+        Teaching: 0,
+        Wisdom: 0,
+        Healing: 0,
+        'Miraculous Powers': 0,
+        Tongues: 0,
+        'Interpretation of Tongues': 0
       },
       results: []
     };
