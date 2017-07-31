@@ -12,6 +12,8 @@ class App extends Component {
     super(props);
 
     this.state = {
+      name: '',
+      //email: '',
       counter: 0,
       questionId: 1,
       question: '',
@@ -46,6 +48,7 @@ class App extends Component {
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentWillMount() {
@@ -71,6 +74,14 @@ class App extends Component {
     }
   }
 
+  handleSubmit(event) {
+    this.setState({
+        name: this.refs.name.value
+        //answer: this.refs.email.value
+    });
+    event.preventDefault();
+  }
+
   setUserAnswer(answer) {
     const answerParts = answer.split('|');
     const type = answerParts[0];
@@ -83,6 +94,7 @@ class App extends Component {
         answersCount: updatedAnswersCount,
         answer: answer
     });
+    console.log(this.state);
   }
 
   setNextQuestion() {
@@ -120,6 +132,19 @@ class App extends Component {
     this.setState({ results: results });
   }
 
+  renderLogin() {
+    return (
+      <div className="text-center">
+          <h2>Please enter your name and email address to begin the survey</h2>
+          <form onSubmit={this.handleSubmit}>
+            <input type="text" placeholder="Enter your name" ref="name" /><br /><br />
+            <input type="text" placeholder="Enter email address" ref="email" /><br />
+            <input type="submit" value="Submit" />
+          </form>
+      </div>
+    );
+  }
+
   renderQuiz() {
     return (
       <Quiz
@@ -139,14 +164,25 @@ class App extends Component {
     );
   }
 
+  renderPage() {
+    if (this.state.name.length < 1) {
+      return this.renderLogin();
+    } else if (this.state.results.length > 0) {
+      return this.renderResult();
+    } else {
+      return this.renderQuiz();
+    }
+  }
+
   render() {
+    var content = this.renderPage();
     return (
       <div className="App">
         <div className="App-header">
           <img src={fpclogo} alt="logo" />
           <h2>FPC Spiritual Gifts Inventory</h2>
         </div>
-        {this.state.results.length > 0 ? this.renderResult() : this.renderQuiz()}
+        {content}
       </div>
     );
   }
