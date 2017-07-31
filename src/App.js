@@ -13,7 +13,7 @@ class App extends Component {
 
     this.state = {
       name: '',
-      //email: '',
+      email: '',
       counter: 0,
       questionId: 1,
       question: '',
@@ -76,8 +76,8 @@ class App extends Component {
 
   handleSubmit(event) {
     this.setState({
-        name: this.refs.name.value
-        //answer: this.refs.email.value
+        name: this.refs.name.value,
+        email: this.refs.email.value
     });
     event.preventDefault();
   }
