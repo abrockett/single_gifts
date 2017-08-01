@@ -5,6 +5,20 @@ import Quiz from './components/Quiz';
 import Result from './components/Result';
 import fpclogo from './svg/fpclogo.png';
 import './App.css';
+var uuid = require('uuid');
+var firebase = require('firebase');
+
+var config = {
+  //apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  apiKey: "AIzaSyBvYfhDAp0k2eC4jTaWGr2JIaGdAI5lrMg",
+  authDomain: "giftsdemo.firebaseapp.com",
+  databaseURL: "https://giftsdemo.firebaseio.com",
+  projectId: "giftsdemo",
+  storageBucket: "giftsdemo.appspot.com",
+  messagingSenderId: "219274203052"
+};
+
+firebase.initializeApp(config);
 
 class App extends Component {
 
@@ -12,6 +26,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      id:uuid.v1(),
       name: '',
       email: '',
       counter: 0,
@@ -130,6 +145,11 @@ class App extends Component {
 
   setResults(results) {
     this.setState({ results: results });
+    firebase.database().ref('surveys/'+this.state.id).set({
+      name: this.state.name,
+      email: this.state.email,
+      results: this.state.results
+    });
   }
 
   renderLogin() {
