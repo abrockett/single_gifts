@@ -19,6 +19,10 @@ var config = {
 };
 
 firebase.initializeApp(config);
+firebase.auth().signInAnonymously()
+ .catch(function(error) {
+   console.log('Authentication error');
+ });
 
 class App extends Component {
 

@@ -21,3 +21,16 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+## Notes
+Anonymous Auth for firebase --- Set these rules in firebase console:
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+
+and enable Anonymous as a sign-in method in the Authentication tab for the database.
+
+then add firebase.auth().signInAnonymously() to init
