@@ -11,13 +11,8 @@
 
 input[type='text']{
   padding:4px;
-  width:350px;
+  width:50%;
   height:30px;
   border-radius:5px;
   border:#ccc solid 1px;
-}
-
-form div{
-  margin-bottom:15px;
-  line-height:2.2em;
 }
